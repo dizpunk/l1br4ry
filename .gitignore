@@ -1,2 +1,5 @@
 # venv folder
 run/
+
+# Blacklist mkdocs build
+site/
