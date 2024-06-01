@@ -1,0 +1,7 @@
+site_name: My L1br4ry
+nav:
+  - Home: index.md
+theme:
+  name: readthedocs
+extra:
+  favicon: 'img/favicon.ico'
