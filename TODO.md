@@ -1,2 +1,3 @@
+# Just do it
 - [ ] Personalize Homepage
-- [ ] Add content from TISR
+- [ ] Fix exa docs
