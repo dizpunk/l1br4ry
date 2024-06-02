@@ -13,6 +13,7 @@ WORKDIR /l1br4ry
 COPY . .
 
 # Install pip requirements
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Create a new user and group
@@ -22,4 +23,4 @@ RUN groupadd -r test && useradd -m -r -g test test
 RUN chown -R test:test /l1br4ry
 
 # Switch to the new user
-USER test
+USER diz
