@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>VPN - L1br4ry</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../l1br4ry.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "VPN";
+        var mkdocs_page_input_path = "sec/Protocols/VPN.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> L1br4ry
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dev</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Languages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/python/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/powershell/">PowerShell</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Platforms</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Linux</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Package Managers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/apt/">APT</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/brew/">Brew</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/dnf/">DNF</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/pacman/">Pacman</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Utilities</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/cat/">cat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/exa/">exa</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/find/">find</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/less/">less</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/ls/">ls</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/most/">most</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/rar/">rar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/sort/">sort</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/tar/">tar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/unar/">unar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/uniq/">uniq</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/zip/">zip</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../dev/Tools/docker/">Docker</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sec</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Protocols</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../SPF/">SPF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TLS/">TLS</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">VPN</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#implementation">Implementation</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IKE/">IKE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DKIM/">DKIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IPsec/">IPsec</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DMARC/">DMARC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DNSSEC/">DNSSEC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MTA-STS/">MTA-STS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CIS/">CIS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CSA/">CSA</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/ATT%26CK/">ATT&CK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/NIST-CSF/">NIST-CSF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/DiamondModel/">DiamondModel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/PiramidOfPain/">PiramidOfPain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CyberKillChain/">CyberKillChain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/UnifiedKillChain/">UnifiedKillChain</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">L1br4ry</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Sec</li>
+          <li class="breadcrumb-item">Protocols</li>
+      <li class="breadcrumb-item active">VPN</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="virtual-private-network">Virtual Private Network</h1>
+<p>A VPN, or Virtual Private Network, is a technology that creates a secure and encrypted connection between your device and a remote server. This connection allows you to access the internet through the remote server's network, effectively masking your true IP address and encrypting your online activities. The main features of a VPN are:</p>
+<ul>
+<li>
+<p><strong>Data Encryption:</strong> When you connect to a VPN, the data transmitted between your device and the VPN server is encrypted. This encryption helps protect your data from being intercepted and viewed by malicious entities or unauthorized users.</p>
+</li>
+<li>
+<p><strong>IP Address Masking:</strong> When you use a VPN, your internet traffic is routed through the VPN server, which means that the websites and online services you access will see the VPN server's IP address instead of your actual IP address. This adds a layer of privacy and anonymity to your online activities.</p>
+</li>
+</ul>
+<p>There are several types of VPNs, each with specific use cases and features:</p>
+<ol>
+<li>
+<p><strong>Remote Access VPN:</strong> This type of VPN allows individuals or employees to securely access a private network from a remote location. It's commonly used by businesses to enable employees to connect to their corporate network from home or other remote locations.</p>
+</li>
+<li>
+<p><strong>Site-to-Site VPN (Intranet VPN):</strong> Site-to-Site VPNs are used to connect multiple local networks (like different office locations of a company) securely over the internet. This enables seamless communication and data sharing between these sites as if they were on the same physical network.</p>
+</li>
+<li>
+<p><strong>Client-Based VPN (Software VPN):</strong> These are the most common types of VPNs used by individuals. They require software to be installed on your device, allowing you to connect securely to a remote server and access the internet through that server's connection. This is what most people refer to when they talk about using a VPN.</p>
+</li>
+<li>
+<p><strong>Gateway-to-Gateway VPN (Hardware VPN):</strong> This type of VPN is established between two physical VPN gateways or routers. It's commonly used by businesses for securely connecting multiple branch offices.</p>
+</li>
+</ol>
+<h2 id="implementation">Implementation</h2>
+<p>VPNs can be implemented using various protocols and technologies. The implementation method depends on the type of VPN and the specific requirements. Here's an overview:</p>
+<ol>
+<li>
+<p><strong>Software Installation:</strong> For client-based VPNs, the most common approach is to install VPN software on the user's device. This software establishes a secure connection to a remote VPN server. Users then connect to the internet through this server's connection. Examples of popular VPN software include ExpressVPN, NordVPN, and CyberGhost.</p>
+</li>
+<li>
+<p><strong>VPN Protocols:</strong> VPNs use different protocols to establish encrypted connections:</p>
+<ul>
+<li><strong>OpenVPN:</strong> This open-source protocol is known for its flexibility, security, and cross-platform compatibility. It often uses port 1194 for UDP or TCP connections.</li>
+<li><strong>IPsec:</strong> Internet Protocol Security is a suite of protocols that can be used to secure communication at the IP layer. It's often used in combination with L2TP or as part of the newer IKEv2 (Internet Key Exchange version 2) protocol.</li>
+<li><strong>L2TP (Layer 2 Tunneling Protocol):</strong> L2TP provides the tunnel, and it's often combined with IPsec for encryption and authentication. It's commonly used for remote access VPNs.</li>
+<li><strong>SSTP (Secure Socket Tunneling Protocol):</strong> Developed by Microsoft, SSTP uses the SSL/TLS protocol for encryption and is commonly used in Windows environments.</li>
+<li><strong>WireGuard:</strong> A newer protocol known for its simplicity and high performance. It aims to provide strong security while being lightweight.</li>
+</ul>
+</li>
+<li>
+<p><strong>Authentication:</strong> VPN implementations often involve user authentication. This ensures that only authorized users can access the VPN. Common methods of authentication include username and password, digital certificates, and two-factor authentication.</p>
+</li>
+<li>
+<p><strong>Encryption:</strong> Encryption is a fundamental aspect of VPNs. It ensures that the data transmitted between the user's device and the VPN server remains private and secure. Strong encryption algorithms are used to encrypt and decrypt data within the VPN tunnel.</p>
+</li>
+<li>
+<p><strong>VPN Server Infrastructure:</strong> VPN service providers maintain a network of VPN servers in various locations. These servers have dedicated IP addresses and are equipped to handle multiple client connections simultaneously. When a user connects to a VPN, they choose a specific server to connect to.</p>
+</li>
+<li>
+<p><strong>Tunnel Establishment:</strong> The VPN client software on the user's device initiates a connection to the chosen VPN server. This involves negotiating the encryption and authentication methods, establishing the VPN tunnel, and creating the necessary encryption keys.</p>
+</li>
+<li>
+<p><strong>Data Routing:</strong> Once the VPN tunnel is established, all data traffic between the user's device and the VPN server is encrypted and sent through the tunnel. The VPN server then forwards the encrypted data to its final destination on the internet, effectively masking the user's original IP address.</p>
+</li>
+<li>
+<p><strong>Data Decryption and Forwarding:</strong> At the destination, the encrypted data is received by the VPN server, decrypted, and sent to its intended recipient (e.g., a website or online service). The recipient's response is encrypted and sent back through the VPN tunnel to the user's device.</p>
+</li>
+<li>
+<p><strong>Exit Node:</strong> In the context of client-based VPNs, the VPN server through which your encrypted data exits to the public internet is often referred to as the "exit node." This is the server's IP address that other online services and websites see, providing a layer of anonymity.</p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../TLS/" class="btn btn-neutral float-left" title="TLS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../IKE/" class="btn btn-neutral float-right" title="IKE">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../TLS/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../IKE/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>PowerShell - L1br4ry</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../l1br4ry.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "PowerShell";
+        var mkdocs_page_input_path = "dev/Languages/powershell.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> L1br4ry
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dev</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Languages</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../python/">Python</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">PowerShell</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#comments">Comments</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#variables">Variables</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#conditional-statements">Conditional Statements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#loops">Loops</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#error-handling">Error Handling</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pipelines">Pipelines</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cmdlets">Cmdlets</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Platforms</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Linux</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Package Managers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/apt/">APT</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/brew/">Brew</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/dnf/">DNF</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/pacman/">Pacman</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Utilities</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/cat/">cat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/exa/">exa</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/find/">find</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/less/">less</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/ls/">ls</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/most/">most</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/rar/">rar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/sort/">sort</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/tar/">tar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/unar/">unar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/uniq/">uniq</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/zip/">zip</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Tools/docker/">Docker</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Protocols</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/SPF/">SPF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/TLS/">TLS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/VPN/">VPN</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/IKE/">IKE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DKIM/">DKIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/IPsec/">IPsec</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DMARC/">DMARC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DNSSEC/">DNSSEC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/MTA-STS/">MTA-STS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CIS/">CIS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CSA/">CSA</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/ATT%26CK/">ATT&CK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/NIST-CSF/">NIST-CSF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/DiamondModel/">DiamondModel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/PiramidOfPain/">PiramidOfPain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CyberKillChain/">CyberKillChain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/UnifiedKillChain/">UnifiedKillChain</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">L1br4ry</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Dev</li>
+          <li class="breadcrumb-item">Languages</li>
+      <li class="breadcrumb-item active">PowerShell</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="powershell"><a href="https://learn.microsoft.com/en-us/powershell/">PowerShell</a></h1>
+<p>Simple but fairly comprehensive cheatsheet of main powershell features and syntax.</p>
+<h2 id="comments">Comments</h2>
+<pre><code class="language-powershell"># Single line comment
+# This is a comment
+
+&lt;#
+Multi-line comment
+This is another comment
+#&gt;
+</code></pre>
+<h2 id="variables">Variables</h2>
+<pre><code># Scalar Variables
+$number = 10
+$bool = $true
+$string = &quot;Hello, PowerShell&quot;
+
+# Arrays
+$array = @(1, 2, 3, 4, 5)
+
+#Hash Table
+$hashTable = @{ &quot;Key1&quot; = &quot;Value1&quot;; &quot;Key2&quot; = &quot;Value2&quot; }
+
+# Type and casting
+[int]$intVariable = 10
+[string]$stringVariable = &quot;Explicit Type&quot;
+
+# Scopes
+$Global:var = &quot;Global Variable&quot;     # Accessible from anywhere in the script or session
+$Local:var = &quot;Local Variable&quot;       # Accessible only within the current function or script
+$Script:var = &quot;Script Variable&quot;     # Accessible throughout the script
+$Private:var = &quot;Private Variable&quot;   # Accessible only within the current script or function, not in child scopes
+</code></pre>
+<h2 id="conditional-statements">Conditional Statements</h2>
+<pre><code># If-else statement
+if ($variable -eq &quot;Hello&quot;) {
+    Write-Output &quot;Greeting&quot;
+} elseif ($variable -eq &quot;Goodbye&quot;) {
+    Write-Output &quot;Farewell&quot;
+} else {
+    Write-Output &quot;Unknown&quot;
+}
+
+# Switch statement
+switch ($variable) {
+    &quot;Hello&quot; {
+        Write-Output &quot;Greeting&quot;
+    }
+    &quot;Goodbye&quot; {
+        Write-Output &quot;Farewell&quot;
+    }
+    default {
+        Write-Output &quot;Unknown&quot;
+    }
+}
+</code></pre>
+<h2 id="loops">Loops</h2>
+<pre><code># For loop
+for ($i = 0; $i -lt 10; $i++) {
+    Write-Output $i
+}
+
+# While loop
+$i = 0
+while ($i -lt 10) {
+    Write-Output $i
+    $i++
+}
+
+# Do-While loop
+$i = 0
+do {
+    Write-Output $i
+    $i++
+} while ($i -lt 10)
+
+# ForEach loop
+$array = @(1, 2, 3, 4, 5)
+foreach ($item in $array) {
+    Write-Output $item
+}
+</code></pre>
+<h2 id="functions">Functions</h2>
+<pre><code># Defines a function that returns a greeting message.
+function Get-Greeting {
+    param ($name = &quot;World&quot;)
+    return &quot;Hello, $name!&quot;
+}
+
+# Calls the Get-Greeting function with the parameter &quot;Ale&quot;.
+Get-Greeting -name &quot;Ale&quot;
+</code></pre>
+<h2 id="error-handling">Error Handling</h2>
+<pre><code># Try-Catch block
+try {
+    $result = 1 / 0
+} catch {
+    Write-Output &quot;An error occurred: $_&quot;
+}
+</code></pre>
+<h2 id="modules">Modules</h2>
+<pre><code># Imports the module named ModuleName.
+Import-Module -Name ModuleName
+
+# Lists all available modules.
+Get-Module -ListAvailable
+
+# Removes the module named ModuleName.
+Remove-Module -Name ModuleName
+</code></pre>
+<h2 id="pipelines">Pipelines</h2>
+<pre><code># Pass output from one cmdlet to another
+Get-Process | Where-Object { $_.CPU -gt 100 } | Sort-Object -Property CPU -Descending
+</code></pre>
+<h2 id="cmdlets">Cmdlets</h2>
+<p>"command-lets," are specialized commands in the PowerShell environment that perform a single function.</p>
+<p>The basic syntax of a cmdlet is:</p>
+<pre><code>&lt;Verb-Noun&gt; [-Parameter &lt;Value&gt;] [&lt;CommonParameters&gt;]
+</code></pre>
+<ul>
+<li>Verb-Noun: Cmdlets use a standardized naming convention of Verb-Noun to describe their action. The verb specifies the action (like Get, Set, New, Remove), and the noun specifies the object (like Process, Service, Item, User).</li>
+<li>Parameters: Cmdlets can have parameters that modify their behavior. These parameters are specified after the cmdlet name.</li>
+<li>CommonParameters: These are parameters available to all cmdlets, like -Verbose, -Debug, -ErrorAction, -ErrorVariable, etc.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../python/" class="btn btn-neutral float-left" title="Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../Platforms/linux/package%20managers/apt/" class="btn btn-neutral float-right" title="APT">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../python/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../Platforms/linux/package%20managers/apt/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

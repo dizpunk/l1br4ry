@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>DNSSEC - L1br4ry</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../l1br4ry.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "DNSSEC";
+        var mkdocs_page_input_path = "sec/Protocols/DNSSEC.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> L1br4ry
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dev</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Languages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/python/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/powershell/">PowerShell</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Platforms</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Linux</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Package Managers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/apt/">APT</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/brew/">Brew</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/dnf/">DNF</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/pacman/">Pacman</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Utilities</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/cat/">cat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/exa/">exa</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/find/">find</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/less/">less</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/ls/">ls</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/most/">most</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/rar/">rar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/sort/">sort</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/tar/">tar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/unar/">unar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/uniq/">uniq</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/zip/">zip</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../dev/Tools/docker/">Docker</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sec</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Protocols</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../SPF/">SPF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TLS/">TLS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VPN/">VPN</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IKE/">IKE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DKIM/">DKIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IPsec/">IPsec</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DMARC/">DMARC</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">DNSSEC</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#dnskey-and-rrsig-records">DNSKEY and RRSIG records</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MTA-STS/">MTA-STS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CIS/">CIS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CSA/">CSA</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/ATT%26CK/">ATT&CK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/NIST-CSF/">NIST-CSF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/DiamondModel/">DiamondModel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/PiramidOfPain/">PiramidOfPain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CyberKillChain/">CyberKillChain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/UnifiedKillChain/">UnifiedKillChain</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">L1br4ry</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Sec</li>
+          <li class="breadcrumb-item">Protocols</li>
+      <li class="breadcrumb-item active">DNSSEC</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="domain-name-system-security-extensions">Domain Name System Security Extensions</h1>
+<p><strong>DNSSEC</strong>, which stands for <strong>Domain Name System Security Extensions</strong>, is a technology used to enhance the security and authenticity of domain name system (DNS) data. DNS is responsible for translating human-readable domain names (like www.example.com) into IP addresses (like 192.0.2.1) that computers use to communicate over the internet. However, traditional DNS lacks inherent security measures, making it susceptible to various attacks like DNS spoofing, cache poisoning, and man-in-the-middle attacks.</p>
+<p>DNSSEC was developed to address these security vulnerabilities by adding digital signatures to DNS data. Here's how it works:</p>
+<ol>
+<li>
+<p><strong>Digital Signatures:</strong> DNSSEC uses cryptographic techniques to create digital signatures for DNS data. These signatures provide a way to verify the authenticity and integrity of DNS records. When a DNS record is signed, it includes a digital signature generated using a private key.</p>
+</li>
+<li>
+<p><strong>Key Management:</strong> DNSSEC employs a hierarchical system of public keys and digital certificates. The top-level domain (TLD) operators, such as ".com" or ".org," are responsible for signing their zone's data using their private key. This creates a chain of trust. The public key is then published in the DNS as a DNSKEY record.</p>
+</li>
+<li>
+<p><strong>Validation:</strong> When a client, such as a web browser, queries a DNS resolver for a specific domain's IP address, the resolver follows the DNS hierarchy to obtain the necessary DNS records. If DNSSEC is enabled, the resolver also retrieves the corresponding DNSSEC-related records, like the DNSKEY and RRSIG (Resource Record Signature) records.</p>
+</li>
+<li>
+<p><strong>Verification:</strong> The resolver uses the DNSKEY records to verify the digital signatures attached to the requested DNS records. It starts with the TLD's DNSKEY to verify the signature of the authoritative name server's DNSKEY. Then, it proceeds down the DNS hierarchy until it reaches the desired domain's authoritative name server.</p>
+</li>
+<li>
+<p><strong>Chain of Trust:</strong> The chain of trust is established when each level's DNSKEY is used to verify the signature of the next level's DNSKEY. This process ensures that the data has not been tampered with and that it comes from a trusted source.</p>
+</li>
+<li>
+<p><strong>Validation Results:</strong> If all signatures are valid and the chain of trust is unbroken, the resolver knows that the DNS data is genuine and has not been modified. It then provides the IP address to the client application, allowing it to establish the desired connection with the correct server.</p>
+</li>
+</ol>
+<p>DNSSEC helps prevent attackers from injecting false DNS records into the system and redirecting users to malicious websites. However, while DNSSEC adds a layer of security to DNS, it's not a complete solution for all types of attacks. It does not encrypt the DNS data, and its effectiveness relies on proper implementation and management of cryptographic keys.</p>
+<h2 id="dnskey-and-rrsig-records">DNSKEY and RRSIG records</h2>
+<p>DNSKEY and RRSIG records of an example domain name "example.com"</p>
+<ol>
+<li><strong>DNSKEY Record:</strong>
+The DNSKEY record contains the public key used for verifying the digital signatures. This record is signed by the zone's private key.</li>
+</ol>
+<pre><code>example.com. IN DNSKEY 256 3 5 (
+    AQOeiiR0GOMYkDshWoSKz9Xz
+    fwJr1AYtsmx3TGK3DzFYEZNam
+    q2DdXK/xbJ87aBK8VyxDmYsM
+    Y+gxw5J58EkMbNXMDOX4V9J1
+    9Xd58fLHJzHAOWUXp2AEUX7S
+    nTCZG9xHiFfvQVWs8jN9/2Q==
+)
+</code></pre>
+<ol>
+<li><strong>RRSIG Record:</strong>
+The RRSIG record contains the digital signature for a specific DNS record set. It's generated by the zone's private key and is used to verify the authenticity of the corresponding DNS record.</li>
+</ol>
+<pre><code>www.example.com. IN RRSIG A 5 3 3600 (
+    20230826000000 20230727000000 12345 example.com.
+    A2R4TZuhv4Y2o7o6uG5RlGDS3
+    2T/+GzFdgQrWzU5e/3BfhbuK
+    LJZbPBr6PfamXSjdGlmrNhXv
+    2U0yCjYHKFkOVLnJ7aZ8wekN
+    Z9aGnZPzFfQnIsa0S7F4AEKr
+    1vWmcpe7dXd==
+)
+</code></pre>
+<p>In this example, the RRSIG record covers the "A" record for "www.example.com". The series of numbers after "A2R4TZuhv4Y2o7o6uG5RlGDS3" represent the timing information for the signature's validity period.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../DMARC/" class="btn btn-neutral float-left" title="DMARC"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../MTA-STS/" class="btn btn-neutral float-right" title="MTA-STS">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../DMARC/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../MTA-STS/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

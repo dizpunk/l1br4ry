@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Docker - L1br4ry</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../l1br4ry.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Docker";
+        var mkdocs_page_input_path = "dev/Tools/docker.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> L1br4ry
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dev</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Languages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Languages/python/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Languages/powershell/">PowerShell</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Platforms</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" >Linux</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Package Managers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/apt/">APT</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/brew/">Brew</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/dnf/">DNF</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/pacman/">Pacman</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Utilities</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/cat/">cat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/exa/">exa</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/find/">find</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/less/">less</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/ls/">ls</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/most/">most</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/rar/">rar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/sort/">sort</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/tar/">tar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/unar/">unar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/uniq/">uniq</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/zip/">zip</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Tools</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Docker</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-manage-containers">How to manage containers</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-manage-images">How to manage images</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#network-configuration">Network configuration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#storage-configuration">Storage configuration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#dockerfile">Dockerfile</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Protocols</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/SPF/">SPF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/TLS/">TLS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/VPN/">VPN</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/IKE/">IKE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DKIM/">DKIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/IPsec/">IPsec</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DMARC/">DMARC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DNSSEC/">DNSSEC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/MTA-STS/">MTA-STS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CIS/">CIS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CSA/">CSA</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/ATT%26CK/">ATT&CK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/NIST-CSF/">NIST-CSF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/DiamondModel/">DiamondModel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/PiramidOfPain/">PiramidOfPain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CyberKillChain/">CyberKillChain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/UnifiedKillChain/">UnifiedKillChain</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">L1br4ry</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Dev</li>
+          <li class="breadcrumb-item">Platforms</li>
+          <li class="breadcrumb-item">Tools</li>
+      <li class="breadcrumb-item active">Docker</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="docker"><a href="https://docs.docker.com/">Docker</a></h1>
+<h2 id="how-to-manage-containers">How to manage containers</h2>
+<p><strong>Start</strong> a container</p>
+<pre><code>docker run IMAGE[:TAG]
+</code></pre>
+<p>Start a container in <strong>detached mode</strong></p>
+<pre><code>docker run -d IMAGE[:TAG]
+</code></pre>
+<p>Start a container in <strong>interactive mode</strong></p>
+<pre><code>docker run -i IMAGE[:TAG]
+</code></pre>
+<p>Start a container in <strong>interactive mode</strong> with a <strong>pseudo-tty</strong></p>
+<pre><code>docker run -it IMAGE[:TAG]
+</code></pre>
+<p>Start a container with an <strong>environmental variable</strong></p>
+<pre><code>docker run -e VARIABLE=VALUE IMAGE[:TAG]
+</code></pre>
+<p><strong>Attach</strong> to a running container</p>
+<pre><code>docker attach ID
+docker attach NAME
+</code></pre>
+<p><strong>Append</strong> a command to a container</p>
+<pre><code>docker run CONTAINER COMMAND
+</code></pre>
+<p><strong>Execute a command</strong> in a container</p>
+<pre><code>docker exec ID COMMAND
+docker exec NAME COMMAND
+</code></pre>
+<p><strong>List</strong> containers</p>
+<pre><code>docker ps
+docker ps -a (to list all containers)
+docker container ls
+</code></pre>
+<p><strong>Inspect</strong> a container</p>
+<pre><code>docker inspect ID
+docker inspect NAME
+</code></pre>
+<p>Inspect <strong>container's logs</strong></p>
+<pre><code>docker logs ID
+docker logs NAME
+</code></pre>
+<p><strong>Stop</strong> a container</p>
+<pre><code>docker stop ID
+docker stop NAME
+</code></pre>
+<p><strong>Remove</strong> a container</p>
+<pre><code>docker rm ID
+docker rm NAME
+</code></pre>
+<hr />
+<h2 id="how-to-manage-images">How to manage images</h2>
+<p><strong>Build</strong> an image from a Dockerfile</p>
+<pre><code>docker build -f DOCKERFILE
+docker build [OPTIONS] URL
+docker build [OPTIONS] PATH
+docker build PATH_TO_DOCKERFILE (file must be called &quot;Dockerfile&quot;)
+</code></pre>
+<p><strong>Build and tag</strong> an image from a Dockerfile</p>
+<pre><code>docker build -t REPOSITORY/IMAGE[:TAG] DOCKERFILE
+</code></pre>
+<p><strong>List</strong> images</p>
+<pre><code>docker images
+docker image ls
+</code></pre>
+<p><strong>Tag</strong> a new image</p>
+<pre><code>docker tag ID REPOSITORY/IMAGE/TAG
+docker tag IMAGE REPOSITORY/IMAGE/TAG
+docker tag IMAGE[:TAG] REPOSITORY/IMAGE/TAG
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE&lt;:TAG&gt;
+</code></pre>
+<p><strong>Push</strong> an image to a registry (e.g. DockerHub)</p>
+<pre><code>docker push ACCOUNT/IMAGE[:TAG]
+docker push REGISTRY:PORT/LOCATION/IMAGE[:TAG]
+</code></pre>
+<p><strong>Pull</strong> down an image</p>
+<pre><code>docker pull IMAGE[:TAG]
+docker pull REGISTRY:PORT/LOCATION/IMAGE[:TAG]
+</code></pre>
+<p><strong>Remove</strong> an image</p>
+<pre><code>docker rmi NAME[:TAG]
+</code></pre>
+<hr />
+<h2 id="network-configuration">Network configuration</h2>
+<p>Running an <strong>isolated container</strong></p>
+<pre><code>docker run IMAGE --network=none
+</code></pre>
+<p>Running a container associated with <strong>Docker-host network</strong></p>
+<pre><code>docker run IMAGE --network=host
+</code></pre>
+<p><strong>Create</strong> a new <strong>network</strong></p>
+<pre><code>docker network create [OPTIONS] NETWORK
+</code></pre>
+<p>Network <strong>options</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">--attachable</td>
+<td style="text-align: left;">Enable manual container attachment (API 1.25+)</td>
+</tr>
+<tr>
+<td style="text-align: left;">--driver , -d</td>
+<td style="text-align: left;">Driver to manage the Network (default: bridge)</td>
+</tr>
+<tr>
+<td style="text-align: left;">--gateway</td>
+<td style="text-align: left;">IPv4 or IPv6 Gateway for the master subnet</td>
+</tr>
+<tr>
+<td style="text-align: left;">--internal</td>
+<td style="text-align: left;">Restrict external access to the network</td>
+</tr>
+<tr>
+<td style="text-align: left;">--ip-range</td>
+<td style="text-align: left;">Allocate container ip from a sub-range</td>
+</tr>
+<tr>
+<td style="text-align: left;">--ipv6</td>
+<td style="text-align: left;">Enable IPv6 networking</td>
+</tr>
+<tr>
+<td style="text-align: left;">--scope</td>
+<td style="text-align: left;">Control the network's scope (API 1.30+)</td>
+</tr>
+<tr>
+<td style="text-align: left;">--subnet</td>
+<td style="text-align: left;">Subnet in CIDR format that represents a network segment</td>
+</tr>
+</tbody>
+</table>
+<p><strong>List</strong> networks</p>
+<pre><code>docker network ls
+</code></pre>
+<p><strong>Inspect</strong> a network</p>
+<pre><code>docker network inspect NETWORK
+</code></pre>
+<p><strong>Remove</strong> a network</p>
+<pre><code>docker network rm NETWORK
+</code></pre>
+<p><strong>PORT mapping</strong></p>
+<pre><code>docker run -p DOCKER_PORT:CONTAINER_PORT IMAGE[:TAG]
+docker run -p DOCKER_PORT/PROTOCOL:CONTAINER_PORT/PROTOCOL IMAGE[:TAG]
+docker run -p DOCKER_IP:DOCKER_PORT/PROTOCOL:CONTAINER_PORT/PROTOCOL IMAGE[:TAG]
+</code></pre>
+<hr />
+<h2 id="storage-configuration">Storage configuration</h2>
+<p><strong>Create</strong> a volume</p>
+<pre><code>docker volume create NAME
+</code></pre>
+<p><strong>Remove</strong> a volume</p>
+<pre><code>docker volume rm NAME
+</code></pre>
+<p><strong>List</strong> volumes</p>
+<pre><code>docker volume ls
+</code></pre>
+<p><strong>Inspect</strong> a volume</p>
+<pre><code>docker volume inspect NAME
+</code></pre>
+<p><strong>Volume mapping</strong></p>
+<pre><code>docker run -v VOLUME:MOUNTPOINT:OPTIONS IMAGE[:TAG]
+docker run -v LOCAL_PATH:MOUNTPOINT:OPTIONS IMAGE[:TAG]
+</code></pre>
+<hr />
+<h2 id="dockerfile">Dockerfile</h2>
+<p>Dockerfile format</p>
+<pre><code># Comment
+INSTRUCTION arguments
+</code></pre>
+<p>The <strong>FROM</strong> instruction initializes a new build stage and sets the base image.</p>
+<pre><code>FROM [--platform=&lt;platform&gt;] image[:&lt;tag&gt;] [AS &lt;name&gt;]
+</code></pre>
+<p>The <strong>RUN</strong> instruction will execute any commands in a new layer on top of the current image ad commit the results.</p>
+<pre><code>RUN &lt;command&gt;
+RUN [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]
+</code></pre>
+<p>The main purpose of a <strong>CMD</strong> is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an <strong>ENTRYPOINT</strong> instruction as well.</p>
+<p>There can only be one CMD instruction in a Dockerfile, so if you list more than one CMD then only the last CMD will take effect.</p>
+<pre><code>CMD &lt;command&gt; &lt;param1&gt; &lt;param2&gt;
+CMD [&quot;param1&quot;,&quot;param2&quot;] (parameters to ENTRYPOINT)
+CMD [&quot;executable&quot;,&quot;param1&quot;,&quot;param2&quot;]
+</code></pre>
+<p>The <strong>LABEL</strong> instruction adds metadata to an image. A LABEL is a key-value pair. To include spaces within a LABEL value, use quotes and backslashes as you would in command-line parsing.</p>
+<pre><code>LABEL &lt;key&gt;=&lt;value&gt; &lt;key&gt;=&lt;value&gt; ...
+</code></pre>
+<p>The <strong>ENV</strong> instruction sets the environment variable "key" to the value "value". This value will be in the environment for all subsequent instructions in the build stage and can be replaced inline in many as well.</p>
+<p>The value will be interpreted for other environment variables, so quote characters will be removed if they are not escaped.</p>
+<pre><code>ENV &lt;key&gt;=&lt;value&gt; &lt;key&gt;=&lt;value&gt; ...
+</code></pre>
+<p>The <strong>ADD</strong> instruction copies new files, directories or remote file URLs from "src" and adds them to the filesystem of the image at the path "dest".</p>
+<p>Multiple "src"resources may be specified but if they are files or directories, their paths are interpreted as relative to the source of the context of the build.</p>
+<p>The --chown feature is only supported on Dockerfiles used to build Linux containers.</p>
+<pre><code>ADD [--chown=&lt;user&gt;:&lt;group&gt;] &lt;src&gt;... &lt;dest&gt;
+</code></pre>
+<p>The <strong>COPY</strong> instruction copies new files or directories from "src" and adds them to the filesystem of the container at the path "dest".</p>
+<p>Multiple "src" resources may be specified but the paths of files and directories will be interpreted as relative to the source of the context of the build.</p>
+<p>The --chown feature is only supported on Dockerfiles used to build Linux containers.</p>
+<pre><code>COPY [--chown=&lt;user&gt;:&lt;group&gt;] &lt;src&gt;... &lt;dest&gt;
+</code></pre>
+<p>An <strong>ENTRYPOINT</strong> allows you to configure a container that will run as an executable.</p>
+<pre><code>ENTRYPOINT command param1 param2
+ENTRYPOINT [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]
+</code></pre>
+<p>The <strong>VOLUME</strong> instruction creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers.</p>
+<p>The value can be a JSON array, VOLUME ["/var/log/"], or a plain string with multiple arguments, such as VOLUME /var/log or VOLUME /var/log /var/db.</p>
+<p>The docker run command initializes the newly created volume with any data that exists at the specified location within the base image.</p>
+<pre><code>VOLUME &lt;path&gt; &lt;path&gt; ...
+VOLUME [&quot;&lt;path&gt;&quot;]
+</code></pre>
+<p>The <strong>USER</strong> instruction sets the user name (or UID) and optionally the user group (or GID) to use when running the image and for any RUN, CMD and ENTRYPOINT instructions that follow it in the Dockerfile.</p>
+<pre><code>USER &lt;UID&gt;[:&lt;GID&gt;]
+USER &lt;user&gt;[:&lt;group&gt;]
+</code></pre>
+<p>The <strong>WORKDIR</strong> instruction sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile. If the WORKDIR doesn’t exist, it will be created even if it’s not used in any subsequent Dockerfile instruction.</p>
+<p>The WORKDIR instruction can be used multiple times in a Dockerfile. If a relative path is provided, it will be relative to the path of the previous WORKDIR instruction.</p>
+<pre><code>WORKDIR &lt;/path_to_workdir&gt;
+</code></pre>
+<p>The <strong>ARG</strong> instruction defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg varname="value" flag. If a user specifies a build argument that was not defined in the Dockerfile, the build outputs a warning.</p>
+<pre><code>ARG &lt;name&gt;[=&lt;default value&gt;]
+</code></pre>
+<p>The <strong>ONBUILD</strong> instruction adds to the image a trigger instruction to be executed at a later time, when the image is used as the base for another build.</p>
+<p>The trigger will be executed in the context of the downstream build, as if it had been inserted immediately after the FROM instruction in the downstream Dockerfile.</p>
+<pre><code>ONBUILD &lt;INSTRUCTION&gt;
+</code></pre>
+<p>The <strong>STOPSIGNAL</strong> instruction sets the system call signal that will be sent to the container to exit.</p>
+<p>This signal can be a signal name in the format SIGNAME, for instance SIGKILL, or an unsigned number that matches a position in the kernel’s syscall table, for instance 9. The default is SIGTERM if not defined.</p>
+<pre><code>STOPSIGNAL signal
+</code></pre>
+<p>The <strong>HEALTHCHECK</strong> instruction tells Docker how to test a container to check that it is still working. This can detect cases such as a web server that is stuck in an infinite loop and unable to handle new connections, even though the server process is still running.</p>
+<p>When a container has a healthcheck specified, it has a health status in addition to its normal status. This status is initially starting. Whenever a health check passes, it becomes healthy (whatever state it was previously in). After a certain number of consecutive failures, it becomes unhealthy.</p>
+<pre><code>HEALTHCHECK NONE (disable any healthcheck inherited)
+HEALTHCHECK [OPTIONS] CMD command (check container health by running a command)
+</code></pre>
+<p>The options that can appear before CMD are:
+- --retries=N (default: 3)
+- --timeout=DURATION (default: 30s)
+- --interval=DURATION (default: 30s)
+- --start-period=DURATION (default: 0s)</p>
+<p>The <strong>SHELL</strong> instruction allows the default shell used for the shell form of commands to be overridden.</p>
+<p>The default shell on Linux is ["/bin/sh", "-c"], and on Windows is ["cmd", "/S", "/C"]. The SHELL instruction must be written in JSON form in a Dockerfile.</p>
+<pre><code>SHELL [&quot;executable&quot;, &quot;parameters&quot;]
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../Platforms/linux/utilities/zip/" class="btn btn-neutral float-left" title="zip"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../../sec/Protocols/SPF/" class="btn btn-neutral float-right" title="SPF">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../Platforms/linux/utilities/zip/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../../sec/Protocols/SPF/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

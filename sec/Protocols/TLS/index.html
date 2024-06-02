@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>TLS - L1br4ry</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../l1br4ry.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "TLS";
+        var mkdocs_page_input_path = "sec/Protocols/TLS.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> L1br4ry
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dev</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Languages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/python/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/powershell/">PowerShell</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Platforms</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Linux</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Package Managers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/apt/">APT</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/brew/">Brew</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/dnf/">DNF</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/pacman/">Pacman</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Utilities</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/cat/">cat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/exa/">exa</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/find/">find</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/less/">less</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/ls/">ls</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/most/">most</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/rar/">rar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/sort/">sort</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/tar/">tar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/unar/">unar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/uniq/">uniq</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/zip/">zip</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../dev/Tools/docker/">Docker</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sec</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Protocols</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../SPF/">SPF</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">TLS</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VPN/">VPN</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IKE/">IKE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DKIM/">DKIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IPsec/">IPsec</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DMARC/">DMARC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DNSSEC/">DNSSEC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MTA-STS/">MTA-STS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CIS/">CIS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CSA/">CSA</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/ATT%26CK/">ATT&CK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/NIST-CSF/">NIST-CSF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/DiamondModel/">DiamondModel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/PiramidOfPain/">PiramidOfPain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CyberKillChain/">CyberKillChain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/UnifiedKillChain/">UnifiedKillChain</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">L1br4ry</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Sec</li>
+          <li class="breadcrumb-item">Protocols</li>
+      <li class="breadcrumb-item active">TLS</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="transport-layer-security">Transport Layer Security</h1>
+<p><strong>Transport Layer Security (TLS)</strong> is a cryptographic protocol designed to provide secure communication over a computer network. It is commonly used to secure data transmission over the internet, ensuring that the information exchanged between a client (like a web browser) and a server (like a web server) remains confidential, integral, and authenticated.</p>
+<p>TLS works by employing a combination of encryption, authentication, and data integrity mechanisms. Here's a high-level overview of how TLS works:</p>
+<ol>
+<li>
+<p><strong>Handshake Protocol</strong>
+   When a client initiates a connection to a server using TLS, a handshake protocol is employed to establish the parameters of the encryption and authentication process. This handshake involves the following steps:</p>
+<ul>
+<li><strong>ClientHello</strong> - The client sends a "ClientHello" message to the server, which includes the list of cryptographic algorithms and protocols it supports, along with a random value.</li>
+<li><strong>ServerHello</strong> - The server responds with a "ServerHello" message, selecting the preferred cryptographic suite from the client's options and providing its own random value.</li>
+<li><strong>Server Certificate</strong> - The server sends its digital certificate, which contains its public key and is signed by a trusted Certificate Authority (CA).</li>
+<li><strong>Key Exchange</strong> - The client generates a pre-master secret, encrypts it with the server's public key from the certificate, and sends it back to the server. Both the client and server then independently derive the same symmetric encryption keys from this pre-master secret.</li>
+<li><strong>Finished</strong> - Both the client and server send "Finished" messages, which are encrypted and hashed using the derived keys. This demonstrates that the handshake is complete and both parties are ready to start secure data exchange.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Exchange</strong>
+   After the handshake is successfully completed, the client and server have established shared secret keys for encryption and decryption. All data exchanged between them is encrypted using these keys, making it unreadable to anyone intercepting the communication.</p>
+</li>
+<li>
+<p><strong>Encryption and Decryption</strong>
+   TLS supports various encryption algorithms, but one commonly used scheme is the Advanced Encryption Standard (AES). This encryption ensures that data transmitted between the client and server remains confidential.</p>
+</li>
+<li>
+<p><strong>Data Integrity and Authentication</strong>
+   TLS also employs mechanisms to ensure that the data has not been tampered with during transmission. This is achieved using hash functions, digital signatures, and HMACs (Hash-based Message Authentication Codes).</p>
+</li>
+<li>
+<p><strong>Certificate Verification</strong>
+   During the handshake, the client verifies the authenticity of the server's digital certificate by checking whether it is signed by a trusted CA and that the domain name matches the one it intended to connect to. This prevents man-in-the-middle attacks where an attacker impersonates the server.</p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../SPF/" class="btn btn-neutral float-left" title="SPF"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../VPN/" class="btn btn-neutral float-right" title="VPN">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../SPF/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../VPN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

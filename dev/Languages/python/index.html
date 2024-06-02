@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Python - L1br4ry</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../l1br4ry.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Python";
+        var mkdocs_page_input_path = "dev/Languages/python.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> L1br4ry
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dev</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Languages</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Python</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#comments">Comments</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#variables">Variables</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#datatypes">Datatypes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#data-structures">Data Structures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operators">Operators</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#control-flow">Control Flow</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#classes">Classes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../powershell/">PowerShell</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Platforms</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Linux</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Package Managers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/apt/">APT</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/brew/">Brew</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/dnf/">DNF</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/package%20managers/pacman/">Pacman</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Utilities</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/cat/">cat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/exa/">exa</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/find/">find</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/less/">less</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/ls/">ls</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/most/">most</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/rar/">rar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/sort/">sort</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/tar/">tar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/unar/">unar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/uniq/">uniq</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../Platforms/linux/utilities/zip/">zip</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Tools/docker/">Docker</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Protocols</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/SPF/">SPF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/TLS/">TLS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/VPN/">VPN</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/IKE/">IKE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DKIM/">DKIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/IPsec/">IPsec</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DMARC/">DMARC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/DNSSEC/">DNSSEC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Protocols/MTA-STS/">MTA-STS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CIS/">CIS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CSA/">CSA</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/ATT%26CK/">ATT&CK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/NIST-CSF/">NIST-CSF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/DiamondModel/">DiamondModel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/PiramidOfPain/">PiramidOfPain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/CyberKillChain/">CyberKillChain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sec/Frameworks/UnifiedKillChain/">UnifiedKillChain</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">L1br4ry</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Dev</li>
+          <li class="breadcrumb-item">Languages</li>
+      <li class="breadcrumb-item active">Python</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="python-programming-language"><a href="https://www.python.org/">Python Programming Language</a></h1>
+<p>Simple but fairly comprehensive cheatsheet of all main python language features and syntax.</p>
+<h2 id="comments">Comments</h2>
+<pre><code># Single line comment
+</code></pre>
+<pre><code>&quot;&quot;&quot; Multiline strings, often used
+    as documentation.
+&quot;&quot;&quot;
+</code></pre>
+<h2 id="variables">Variables</h2>
+<p>There are no declarations, only assignments.</p>
+<pre><code>var = 5
+var  # =&gt; 5
+</code></pre>
+<h2 id="datatypes">Datatypes</h2>
+<p><strong>Numbers</strong></p>
+<pre><code>3
+3.23
+52.3E-4
+</code></pre>
+<p><strong>Boolean</strong></p>
+<pre><code>True
+False
+</code></pre>
+<p><strong>Strings</strong> (immutable)</p>
+<pre><code>&quot;This is a string.&quot;
+'This is also a string.'
+r&quot;Newlines are indicated by \n&quot; (raw string, no special processing )
+f&quot;She said her name is {name}.&quot; (formatted string, name is a variable)
+</code></pre>
+<p><strong>None</strong> (is an object)</p>
+<pre><code>None
+</code></pre>
+<h2 id="data-structures">Data Structures</h2>
+<p><strong>Lists</strong> - Hold an ordered and changeable collection of items. Lists allow duplicate values.</p>
+<pre><code>list = []
+list = [&quot;A&quot;, 5, 6, True]
+</code></pre>
+<p>Get length.</p>
+<pre><code>len(list)
+</code></pre>
+<p>Check for existence.</p>
+<pre><code>1 in list  # =&gt; True
+</code></pre>
+<p>Access a list like any array.</p>
+<pre><code>list[0]
+list[-1] (last element)
+</code></pre>
+<p>Get index of first matching item.</p>
+<pre><code>list.index(value)
+</code></pre>
+<p>Insert, append and pop.</p>
+<pre><code>list.insert(index, value)
+list.append(3)    # list is now [1, 2, 4, 3]
+list.pop()        # =&gt; 3 list is now [1, 2, 4]
+</code></pre>
+<p>Slice syntax.</p>
+<pre><code>list[start:end:step]
+list[2:]
+list[:3]
+list[1:3]
+list[::2]
+</code></pre>
+<p>Add lists.</p>
+<pre><code>list + other_list
+</code></pre>
+<p>Remove element.</p>
+<pre><code>del list[index]
+</code></pre>
+<p>Remove first occurrence of a value.</p>
+<pre><code>list.remove(value)
+</code></pre>
+<p><strong>Tuples</strong> -  Hold an ordered and immutable collection of items.</p>
+<pre><code>tuple = (1, 2, 3)
+tup[0]      # =&gt; 1
+tup[0] = 3  # Raises a TypeError
+</code></pre>
+<p>Most of the list operations are valid for tuples too</p>
+<p><strong>Dictionaries</strong> - Store keys to values mappings. Dictionary items are ordered, changeable and does not allow duplicates.</p>
+<pre><code>dictionary = {}
+dictionary = {&quot;one&quot;: 1, &quot;two&quot;: 2, &quot;three&quot;: 3}
+</code></pre>
+<p>Keys for dictionaries have to be immutable types.
+Immutable types include ints, floats, strings, tuples.</p>
+<p>Look up values using corresponding key.</p>
+<pre><code>dictionary[&quot;one&quot;]       # =&gt; 1
+dictionary.get(&quot;one&quot;)   # =&gt; 1
+</code></pre>
+<p>Get all keys / values.</p>
+<pre><code>list(dictionary.keys())  # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;]
+list(dictionary.values())  # =&gt; [1, 2, 3]
+</code></pre>
+<p>Check for existence of keys.</p>
+<pre><code>&quot;one&quot; in dictionary  # =&gt; True
+1 in dictionary      # =&gt; False
+</code></pre>
+<p>Adding an element.</p>
+<pre><code>dictionary[&quot;four&quot;] = 4
+dictionary.update({&quot;four&quot;:4})
+</code></pre>
+<p>Remove keys.</p>
+<pre><code>del dictionary[&quot;one&quot;]
+</code></pre>
+<p><strong>Sets</strong> - Hold an unordered, unchangeable collection of items. Sets do not allow duplicate values.</p>
+<pre><code>set = set()
+set = {1, 2, 2, 3, 3, 4}  # some_set is now {1, 2, 3, 4}
+</code></pre>
+<p>Elements of a set have to be immutable.</p>
+<p>Add items.</p>
+<pre><code>set.add(5)  # set is now {1, 2, 3, 4, 5}
+set.add(5)  # remains as before {1, 2, 3, 4, 5}
+</code></pre>
+<p>Intersection (<strong>&amp;</strong>), union (<strong>|</strong>), difference (<strong>-</strong>), symmetric difference (<strong>^</strong>), superset.</p>
+<pre><code>other_set = {3, 4, 5, 6}
+set &amp; other_set  # =&gt; {3, 4, 5}
+
+filled_set | other_set  # =&gt; {1, 2, 3, 4, 5, 6}
+
+{1, 2, 3, 4} - {2, 3, 5}  # =&gt; {1, 4}
+
+{1, 2, 3, 4} ^ {2, 3, 5}  # =&gt; {1, 4, 5}
+
+{1, 2} &gt;= {1, 2, 3} # =&gt; False
+{1, 2} &lt;= {1, 2, 3} # =&gt; True
+</code></pre>
+<p>Check for existence.</p>
+<pre><code>2 in set   # =&gt; True
+10 in set  # =&gt; False
+</code></pre>
+<h2 id="operators">Operators</h2>
+<p><strong>Mathematical</strong> operators are straightforward.</p>
+<pre><code>1 + 1   # =&gt; 2
+8 - 1   # =&gt; 7
+10 * 2  # =&gt; 20
+35 / 5  # =&gt; 7.0
+</code></pre>
+<p><strong>Integer division</strong> rounds down both positive and negative numbers.</p>
+<pre><code>5 // 3       # =&gt; 1
+-5 // 3      # =&gt; -2
+5.0 // 3.0   # =&gt; 1.0
+-5.0 // 3.0  # =&gt; -2.0
+</code></pre>
+<p>The result of <strong>division</strong> is always a float.</p>
+<pre><code>10.0 / 3  # =&gt; 3.3333333333333335
+</code></pre>
+<p><strong>Modulo</strong> operator.</p>
+<pre><code>7 % 3   # =&gt; 1
+</code></pre>
+<p><strong>Exponentiation</strong> operator.</p>
+<pre><code>2**3  # =&gt; 8
+</code></pre>
+<p><strong>Boolean</strong> operators.</p>
+<pre><code>not False  # =&gt; True
+not True   # =&gt; False
+False or True   # =&gt; True
+True and False  # =&gt; False
+</code></pre>
+<p><strong>Comparison</strong> operators look at the numerical value of booleans (True and False are actually 1 and 0).</p>
+<pre><code>0 == False  # =&gt; True
+2 &gt; True    # =&gt; True
+</code></pre>
+<p>None, 0, and empty strings/lists/dicts/tuples/sets all evaluate to False, all other values are True.</p>
+<pre><code>bool(0)     # =&gt; False
+bool(&quot;&quot;)    # =&gt; False
+bool([])    # =&gt; False
+bool(None)     # =&gt; False
+</code></pre>
+<p><strong>Equality</strong>, <strong>inequality</strong> and <strong>comparisons</strong> operators.</p>
+<pre><code>1 == 1  # =&gt; True
+2 == 1  # =&gt; False
+1 != 1  # =&gt; False
+2 != 1  # =&gt; True
+1 &lt; 10  # =&gt; True
+1 &gt; 10  # =&gt; False
+2 &lt;= 2  # =&gt; True
+2 &gt;= 2  # =&gt; True
+</code></pre>
+<p>"<strong>is</strong>" checks if two variables refer to the same object, but "<strong>==</strong>" checks if the objects have the same values.</p>
+<pre><code>a = [1, 2, 3, 4]
+b = a
+b is a            # =&gt; True
+b == a            # =&gt; True
+b = [1, 2, 3, 4]
+b is a            # =&gt; False
+b == a            # =&gt; True
+</code></pre>
+<h2 id="control-flow">Control Flow</h2>
+<p><strong>if</strong> statement.</p>
+<pre><code>if var &gt; 10:
+
+    # do something
+
+elif var &lt; 10:
+
+    # do something
+
+else:
+
+    # do something
+</code></pre>
+<p><strong>For</strong> loops.</p>
+<pre><code># range(lower, upper, step), where upper bound is excluded
+for i in range(4):
+    print(i)
+
+for i in range(4, 8): #
+    print(i)
+
+for i in range(4, 8, 2):
+    print(i)
+
+
+# iterate over an iterable object (an iterable is an object that can be treated as a sequence).
+for animal in [&quot;dog&quot;, &quot;cat&quot;, &quot;mouse&quot;]:
+    print(f&quot;{animal} is a mammal&quot;)
+
+animals = [&quot;dog&quot;, &quot;cat&quot;, &quot;mouse&quot;]
+for i, value in enumerate(animals):
+    print(i, value)
+</code></pre>
+<p><strong>While</strong> loops.</p>
+<pre><code>x = 0
+while x &lt; 4:
+    print(x)
+    x += 1
+</code></pre>
+<p><strong>try/except</strong> blocks.</p>
+<pre><code>try:
+
+    # try something
+    raise IndexError(&quot;This is an index error&quot;)
+
+except IndexError as error:
+
+    # handle one or more exceptions
+    print(f&quot;Oh no: {error}&quot;)
+
+except (TypeError, NameError):
+
+    pass
+
+else:
+
+    # run when no exceptions is raised in try
+    print(&quot;All good!&quot;)
+
+finally:
+
+    # always execute anyway
+    print(&quot;...anyway!&quot;)
+</code></pre>
+<p><strong>with</strong> statement.</p>
+<pre><code>with open(&quot;file.txt&quot;) as file:
+    for line in file:
+        print(line)
+</code></pre>
+<h2 id="functions">Functions</h2>
+<p>Create a new <strong>function</strong>.</p>
+<pre><code>def add(x, y):
+    return x + y
+</code></pre>
+<p>Calling functions with <strong>parameters</strong> or <strong>keyword arguments</strong>.</p>
+<pre><code>add(5, 7)      # =&gt;  12
+add(y=7, x=5)  # =&gt;  12
+</code></pre>
+<p>Define a function that take a variable number of <strong>positional arguments</strong> (stored in a tuple).</p>
+<pre><code>def func(*args):
+    return args
+
+func(1, 2, 3)  # =&gt; (1, 2, 3)
+</code></pre>
+<p>You can define functions that take a variable number of <strong>keyword arguments</strong> (stored in a dictionary).</p>
+<pre><code>def func(**kwargs):
+    return kwargs
+
+func(english=&quot;eng&quot;, italian=&quot;ita&quot;)  # =&gt; {&quot;english&quot;: &quot;eng&quot;, &quot;italian&quot;: &quot;ita&quot;}
+</code></pre>
+<p>Both can be used at once.</p>
+<pre><code>def func(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+func(1, 2, a=3, b=4) # =&gt; (1, 2)
+                          {&quot;a&quot;: 3, &quot;b&quot;: 4}
+</code></pre>
+<p>It's possible to return multiple values (returned values are stored in a tuple).</p>
+<pre><code>def func(x, y):
+    return y, x
+
+func(&quot;a&quot;, &quot;b&quot;) # =&gt; ('b', 'a')
+</code></pre>
+<p>Global and local <strong>scope</strong>.</p>
+<pre><code>x = 5
+
+def set_local(num):
+    # local scope
+    x = num
+    print(x)
+
+def set_global(num):
+    # global refers to global variable
+    global x
+    print(x)
+    x = num
+    print(x)
+
+set_local(10)  # =&gt; 10
+set_global(20) # =&gt; 5
+                    20
+</code></pre>
+<p><strong>Lambdas</strong> (anonymous functions).</p>
+<pre><code>func = lambda a : a + 10
+
+func(5)   # =&gt; 15
+</code></pre>
+<p>Return functions.</p>
+<pre><code>def parent_func(x):
+    def child_func(y):
+        return x + y
+    return child_func
+
+func = parent_func(10)
+func(3)   # =&gt; 13
+</code></pre>
+<h2 id="classes">Classes</h2>
+<p>Define a <strong>class</strong>.</p>
+<pre><code>class Person:
+
+    # class variables shared by all instances
+    species = &quot;H. sapiens&quot;
+
+    # initializer method (when a class defines an __init__() method, class instantiation automatically invokes __init__() for the newly created class instance)
+    def __init__(self, name, surname, age):
+        # instance variables unique to each instance
+        self.age = age
+        self.name = name
+        self.surname = surname
+
+    # an instance method (all methods take &quot;self&quot; as the first argument)
+    def greet(self):
+        print(f&quot;Hello, I am {self.name} {self.surname}.&quot;)
+</code></pre>
+<p>Define <strong>inheritance</strong>.</p>
+<pre><code>class Engineer(Person):
+
+    # child's __init__() function overrides the inheritance of the parent's __init__() function so it's necessary to add a call to the parent's __init__().
+
+    def __init__(self, name, surname, age, job, pay):
+
+        # call to parent initializer
+        Person.__init__(self, name, surname, age)
+        # or
+        super().__init__(name, surname, age)
+
+        self.job = job
+        self.pay = pay
+
+    def brag_about_job(self):
+        print(f&quot;Currently working as a {self.job}&quot;)
+
+    def brag_about_pay(self):
+        print(f&quot;I'm being paied around {self.pay} a year&quot;)
+</code></pre>
+<h2 id="modules">Modules</h2>
+<p><strong>__name__</strong> checks makes sure the code is only executed when the module is the main program.</p>
+<pre><code>if __name__ == '__main__':
+    # execution
+</code></pre>
+<p><strong>Import</strong> modules.</p>
+<pre><code>import math
+
+math.pow(2, 3)  # =&gt; 8.0
+</code></pre>
+<p>Import <strong>specific functions</strong> from a module.</p>
+<pre><code>from math import pow
+
+pow(2, 3)  # =&gt; 8.0
+</code></pre>
+<p>Import <strong>all functions</strong> from a module (not recommended).</p>
+<pre><code>from math import *
+
+pow(2, 3)  # =&gt; 8.0
+</code></pre>
+<p><strong>Customize</strong> module names.</p>
+<pre><code>import math as m
+
+m.pow(2, 3)  # =&gt; 8.0
+</code></pre>
+<p>Find which functions and attributes are defined in a module.</p>
+<pre><code>import math
+dir(math)
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../powershell/" class="btn btn-neutral float-right" title="PowerShell">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../powershell/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>DMARC - L1br4ry</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../l1br4ry.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "DMARC";
+        var mkdocs_page_input_path = "sec/Protocols/DMARC.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> L1br4ry
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dev</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Languages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/python/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/powershell/">PowerShell</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Platforms</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Linux</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Package Managers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/apt/">APT</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/brew/">Brew</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/dnf/">DNF</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/pacman/">Pacman</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Utilities</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/cat/">cat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/exa/">exa</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/find/">find</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/less/">less</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/ls/">ls</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/most/">most</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/rar/">rar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/sort/">sort</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/tar/">tar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/unar/">unar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/uniq/">uniq</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/zip/">zip</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../dev/Tools/docker/">Docker</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sec</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Protocols</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../SPF/">SPF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TLS/">TLS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VPN/">VPN</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IKE/">IKE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DKIM/">DKIM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IPsec/">IPsec</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">DMARC</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#dns-record">DNS record</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DNSSEC/">DNSSEC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MTA-STS/">MTA-STS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CIS/">CIS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CSA/">CSA</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/ATT%26CK/">ATT&CK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/NIST-CSF/">NIST-CSF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/DiamondModel/">DiamondModel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/PiramidOfPain/">PiramidOfPain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CyberKillChain/">CyberKillChain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/UnifiedKillChain/">UnifiedKillChain</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">L1br4ry</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Sec</li>
+          <li class="breadcrumb-item">Protocols</li>
+      <li class="breadcrumb-item active">DMARC</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="domain-based-message-authentication-reporting-and-conformance">Domain-based Message Authentication, Reporting, and Conformance</h1>
+<p><strong>DMARC</strong> stands for <strong>Domain-based Message Authentication, Reporting, and Conformance</strong>. It is an email authentication protocol designed to combat email phishing and spoofing by providing a way for domain owners to specify how email messages from their domain should be handled if they fail authentication checks. DMARC works by allowing domain owners to publish policies in their Domain Name System (DNS) records that instruct receiving mail servers on how to handle emails that claim to be from their domain.</p>
+<p>Here's how DMARC works:</p>
+<ol>
+<li>
+<p><strong>Authentication Mechanisms:</strong> DMARC builds upon two existing email authentication mechanisms: SPF (Sender Policy Framework) and DKIM (DomainKeys Identified Mail).</p>
+<ul>
+<li>
+<p><strong>SPF (Sender Policy Framework):</strong> SPF allows domain owners to specify which IP addresses and servers are authorized to send emails on behalf of their domain. When a receiving mail server gets an email claiming to be from a certain domain, it can check if the sending server's IP address is listed in that domain's SPF record.</p>
+</li>
+<li>
+<p><strong>DKIM (DomainKeys Identified Mail):</strong> DKIM allows domain owners to sign outgoing emails with a digital signature. The receiving mail server can then verify this signature by checking the corresponding public key in the domain's DNS records.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>DMARC Policy:</strong> A domain owner publishes a DMARC policy in their DNS records, specifying how the receiving mail server should handle emails that fail SPF and DKIM checks. The policy can have three main actions: "none," "quarantine," and "reject."</p>
+<ul>
+<li>
+<p><strong>None:</strong> The DMARC policy is set to "none" when the domain owner is in monitoring mode. It allows the domain owner to collect reports on failed authentication attempts without taking any action on the emails.</p>
+</li>
+<li>
+<p><strong>Quarantine:</strong> The DMARC policy is set to "quarantine" when the domain owner wants the receiving mail server to treat emails that fail authentication as suspicious. These emails might be placed in the recipient's spam folder.</p>
+</li>
+<li>
+<p><strong>Reject:</strong> The DMARC policy is set to "reject" when the domain owner wants the receiving mail server to outright reject emails that fail authentication. These emails are not delivered to the recipient's inbox.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Reporting:</strong> DMARC also provides reporting mechanisms. Receiving mail servers can send aggregate and forensic reports back to the domain owner, detailing the authentication status of incoming emails claiming to be from their domain. These reports provide valuable insights into unauthorized use of the domain for phishing or spoofing attempts.</p>
+</li>
+</ol>
+<p>DMARC helps domain owners protect their brand and recipients from phishing and spoofing attacks by specifying how receiving mail servers should handle emails that claim to originate from their domain. It builds upon SPF and DKIM authentication mechanisms and provides policies for action to be taken based on the authentication results. The reporting aspect of DMARC allows domain owners to monitor and improve their email authentication practices over time.</p>
+<h2 id="dns-record">DNS record</h2>
+<p>Example of a DMARC record for the domain "example.com":</p>
+<pre><code>_dmarc.example.com. IN TXT &quot;v=DMARC1; p=quarantine; rua=mailto:dmarc@example.com; ruf=mailto:dmarc@example.com; fo=1&quot;
+</code></pre>
+<ul>
+<li>
+<p><code>v=DMARC1</code>: This specifies the version of the DMARC protocol being used.</p>
+</li>
+<li>
+<p><code>p=quarantine</code>: This sets the policy action to "quarantine." It instructs receiving mail servers to treat emails that fail authentication as suspicious and potentially place them in the recipient's spam folder.</p>
+</li>
+<li>
+<p><code>rua=mailto:dmarc@example.com</code>: This indicates where aggregate reports should be sent. In this example, aggregate reports will be sent to the email address "dmarc@example.com."</p>
+</li>
+<li>
+<p><code>ruf=mailto:dmarc@example.com</code>: This indicates where forensic (detailed) reports should be sent. Similar to aggregate reports, forensic reports will be sent to the email address "dmarc@example.com."</p>
+</li>
+<li>
+<p><code>fo=1</code>: This specifies the format of the reports. The value "1" indicates that the reports should be generated in a human-readable format.</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../IPsec/" class="btn btn-neutral float-left" title="IPsec"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../DNSSEC/" class="btn btn-neutral float-right" title="DNSSEC">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../IPsec/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../DNSSEC/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+/*
+PALETTE
+#006769
+#40A578
+#9DDE8B
+#E6FF94
+*/
+
+/*Standar CSS*/
+a {
+    color: #40A578;
+}
+
+a:hover {
+    color: #0bea86;
+}
+
+a:visited {
+    color: #40A578;
+}
+
+
+/*Markdown*/
+.rst-content code {
+    color: #40A578;
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-meta .hljs-string,
+.hljs-regexp,
+.hljs-string,
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_,
+.hljs-operator,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-variable {
+    color: #40A578;
+}
+
+.hljs-built_in,
+.hljs-symbol,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+    color: #006769;
+}
+
+
+/*Sidebar*/
+.wy-side-nav-search {
+    display: block;
+    width: 300px;
+    padding: .809em;
+    margin-bottom: .809em;
+    z-index: 200;
+    background-color: #006769;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+.wy-menu-vertical header,
+.wy-menu-vertical p.caption {
+    color: #006769;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 85%;
+    white-space: nowrap;
+}
+
+
+/* Content */
+.wy-nav-content-wrap {
+    background: #aeddc8;
+}
+
+.wy-nav-content {
+    margin: 0;
+    background: #fcfcfc;
+}

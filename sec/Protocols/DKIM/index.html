@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>DKIM - L1br4ry</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../l1br4ry.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "DKIM";
+        var mkdocs_page_input_path = "sec/Protocols/DKIM.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> L1br4ry
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dev</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Languages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/python/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../dev/Languages/powershell/">PowerShell</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Platforms</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Linux</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" >Package Managers</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/apt/">APT</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/brew/">Brew</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/dnf/">DNF</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/package%20managers/pacman/">Pacman</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Utilities</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/cat/">cat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/exa/">exa</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/find/">find</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/less/">less</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/ls/">ls</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/most/">most</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/rar/">rar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/sort/">sort</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/tar/">tar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/unar/">unar</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/uniq/">uniq</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../../../dev/Platforms/linux/utilities/zip/">zip</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../dev/Tools/docker/">Docker</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sec</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Protocols</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../SPF/">SPF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TLS/">TLS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VPN/">VPN</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IKE/">IKE</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">DKIM</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#dns-record">DNS record</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../IPsec/">IPsec</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DMARC/">DMARC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DNSSEC/">DNSSEC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MTA-STS/">MTA-STS</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Frameworks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CIS/">CIS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CSA/">CSA</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/ATT%26CK/">ATT&CK</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/NIST-CSF/">NIST-CSF</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/DiamondModel/">DiamondModel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/PiramidOfPain/">PiramidOfPain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/CyberKillChain/">CyberKillChain</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Frameworks/UnifiedKillChain/">UnifiedKillChain</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">L1br4ry</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Sec</li>
+          <li class="breadcrumb-item">Protocols</li>
+      <li class="breadcrumb-item active">DKIM</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="domainkeys-identified-mail">DomainKeys Identified Mail</h1>
+<p>The <strong>DomainKeys Identified Mail (DKIM)</strong> is a cryptographic email authentication method that helps verify the authenticity of an email message. It allows the sender of an email to digitally sign the message using a private key, and the recipient can then verify the signature using a public key published in the sender's DNS records. This process ensures that the email hasn't been tampered with during transit and that it indeed came from the claimed sender domain.</p>
+<p>Here's how DKIM works with an example:</p>
+<ol>
+<li>
+<p><strong>Key Generation:</strong></p>
+<ul>
+<li>The sending domain generates a pair of cryptographic keys: a private key and a corresponding public key.</li>
+<li>The private key remains confidential and is used to sign outgoing emails, while the public key is made available through DNS records.</li>
+</ul>
+</li>
+<li>
+<p><strong>Signing Process:</strong></p>
+<ul>
+<li>When the sending mail server wants to send an email, it generates a unique cryptographic hash of the email's contents (excluding certain headers).</li>
+<li>This hash is then encrypted using the private key, creating a digital signature. The signature is attached to the email as a DKIM-Signature header.</li>
+</ul>
+</li>
+<li>
+<p><strong>DNS Record Update:</strong></p>
+<ul>
+<li>The sender publishes the public key in their DNS records as a TXT record, associating it with the domain used to send emails.</li>
+<li>The public key is retrieved by the recipient's mail server when verifying the email's authenticity.</li>
+</ul>
+</li>
+<li>
+<p><strong>Verification Process:</strong></p>
+<ul>
+<li>When the recipient's mail server receives an email, it extracts the DKIM-Signature header and retrieves the public key from the sender's DNS records.</li>
+<li>The server then decrypts the signature using the public key, revealing the hash.</li>
+<li>The server also generates its own hash of the received email's contents (excluding certain headers).</li>
+</ul>
+</li>
+<li>
+<p><strong>Comparison and Authentication:</strong></p>
+<ul>
+<li>The recipient's server compares the two hashes – the one it generated and the one decrypted from the signature.</li>
+<li>If the hashes match, the email is considered authentic and hasn't been tampered with during transit. If they don't match, it suggests potential tampering, and the email might be treated as suspicious or even rejected.</li>
+</ul>
+</li>
+</ol>
+<p>DKIM helps prevent email spoofing and ensures the integrity of emails, making it harder for malicious actors to forge the sender's identity or modify email content without detection.</p>
+<h2 id="dns-record">DNS record</h2>
+<p>Example of a DKIM record for "example.com":</p>
+<pre><code>default._domainkey.example.com. IN TXT &quot;v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3Yh7GzR4sb9C9aVdktRaR0wI1
+i4F5A1hx+I3h9SQcqP3s7wH6CfhZa/vU0xC/XL15Boek3ssW/JjBGOUeOfM3Q9uR
+q4aPLX7wdJlvA5Qx3Kf/EqZIyqCBjYirpvzGrf4bL+p3YbYYMPi0xMCwXvANRi6D
+ESCMzujE0bIG1d0W6wIDAQAB&quot;
+</code></pre>
+<ul>
+<li>
+<p><code>default._domainkey.example.com.</code>: This is the selector for the DKIM key. The <code>default</code> selector is commonly used, and <code>_domainkey.example.com</code> is a subdomain used to host DKIM keys.</p>
+</li>
+<li>
+<p><code>IN TXT</code>: This specifies the record type as a TXT record.</p>
+</li>
+<li>
+<p><code>"v=DKIM1; k=rsa; p=MIGfMA0GCSq..."</code>: This is the DKIM record itself. It includes several key-value pairs:</p>
+</li>
+<li><code>v=DKIM1</code>: Indicates the version of DKIM being used.</li>
+<li><code>k=rsa</code>: Specifies the encryption algorithm (RSA in this case).</li>
+<li><code>p=</code>: Contains the actual public key associated with DKIM. The long string is the actual public key value.</li>
+</ul>
+<p>When a recipient's mail server receives an email from "example.com", it will use the DKIM selector (<code>default._domainkey.example.com</code>) to look up the corresponding public key in the DNS TXT record. It will then use this public key to verify the authenticity of the DKIM signature in the email's header.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../IKE/" class="btn btn-neutral float-left" title="IKE"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../IPsec/" class="btn btn-neutral float-right" title="IPsec">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../IKE/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../IPsec/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
