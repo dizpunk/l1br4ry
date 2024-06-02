@@ -1,7 +1,59 @@
 site_name: My L1br4ry
 nav:
-  - Home: index.md
+  - Home: 'index.md'
+  - Dev:
+      - Overview: 'dev.md'
+      - Languages:
+          - Python: 'dev/Languages/python.md'
+          - PowerShell: 'dev/Languages/powershell.md'
+      - Platforms:
+          - Linux:
+              - Package Managers:
+                  - APT: 'dev/Platforms/linux/package managers/apt.md'
+                  - Brew: 'dev/Platforms/linux/package managers/brew.md'
+                  - DNF: 'dev/Platforms/linux/package managers/dnf.md'
+                  - Pacman: 'dev/Platforms/linux/package managers/pacman.md'
+              - Utilities:
+                  - cat: 'dev/Platforms/linux/utilities/cat.md'
+                  - exa: 'dev/Platforms/linux/utilities/exa.md'
+                  - find: 'dev/Platforms/linux/utilities/find.md'
+                  - less: 'dev/Platforms/linux/utilities/less.md'
+                  - ls: 'dev/Platforms/linux/utilities/ls.md'
+                  - most: 'dev/Platforms/linux/utilities/most.md'
+                  - rar: 'dev/Platforms/linux/utilities/rar.md'
+                  - sort: 'dev/Platforms/linux/utilities/sort.md'
+                  - tar: 'dev/Platforms/linux/utilities/tar.md'
+                  - unar: 'dev/Platforms/linux/utilities/unar.md'
+                  - uniq: 'dev/Platforms/linux/utilities/uniq.md'
+                  - zip: 'dev/Platforms/linux/utilities/zip.md'
+      - Tools:
+          - Docker: 'dev/Tools/docker.md'
+  - Sec:
+      - Overview: 'sec.md'
+      - Protocols:
+          - SPF: 'sec/Protocols/SPF.md'
+          - TLS: 'sec/Protocols/TLS.md'
+          - VPN: 'sec/Protocols/VPN.md'
+          - IKE: 'sec/Protocols/IKE.md'
+          - DKIM: 'sec/Protocols/DKIM.md'
+          - IPsec: 'sec/Protocols/IPsec.md'
+          - DMARC: 'sec/Protocols/DMARC.md'
+          - DNSSEC: 'sec/Protocols/DNSSEC.md'
+          - MTA-STS: 'sec/Protocols/MTA-STS.md'
+      - Frameworks:
+          - CIS: 'sec/Frameworks/CIS.md'
+          - CSA: 'sec/Frameworks/CSA.md'
+          - ATT&CK: 'sec/Frameworks/ATT&CK.md'
+          - NIST-CSF: 'sec/Frameworks/NIST-CSF.md'
+          - DiamondModel: 'sec/Frameworks/DiamondModel.md'
+          - PiramidOfPain: 'sec/Frameworks/PiramidOfPain.md'
+          - CyberKillChain: 'sec/Frameworks/CyberKillChain.md'
+          - UnifiedKillChain: 'sec/Frameworks/UnifiedKillChain.md'
 theme:
   name: readthedocs
+  locale: en
+  options:
+    color_mode: 'dark'  # Enable automatic color mode (dark/light)
+    user_color_mode_toggle: true  # Enable user toggle for color mode
 extra:
   favicon: 'img/favicon.ico'
