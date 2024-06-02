@@ -1,10 +1,7 @@
 # [Python Programming Language](https://www.python.org/)
 Simple but fairly comprehensive cheatsheet of all main python language features and syntax.
 
-<br>
-
 ## Comments
-
 ```
 # Single line comment
 ```
@@ -14,8 +11,6 @@ Simple but fairly comprehensive cheatsheet of all main python language features 
 """
 ```
 
-<br>
-
 ## Variables
 There are no declarations, only assignments.
 ```
@@ -23,10 +18,7 @@ var = 5
 var  # => 5
 ```
 
-<br>
-
 ## Datatypes
-
 __Numbers__
 ```
 3
@@ -53,10 +45,7 @@ __None__ (is an object)
 None
 ```
 
-<br>
-
 ## Data Structures
-
 __Lists__ - Hold an ordered and changeable collection of items. Lists allow duplicate values.
 ```
 list = []
@@ -115,8 +104,6 @@ Remove first occurrence of a value.
 list.remove(value)
 ```
 
-<br>
-
 __Tuples__ -  Hold an ordered and immutable collection of items.
 ```
 tuple = (1, 2, 3)
@@ -125,8 +112,6 @@ tup[0] = 3  # Raises a TypeError
 ```
 
 Most of the list operations are valid for tuples too
-
-<br>
 
 
 __Dictionaries__ - Store keys to values mappings. Dictionary items are ordered, changeable and does not allow duplicates.
@@ -167,8 +152,6 @@ Remove keys.
 del dictionary["one"]
 ```
 
-<br>
-
 __Sets__ - Hold an unordered, unchangeable collection of items. Sets do not allow duplicate values.
 ```
 set = set()
@@ -204,10 +187,7 @@ Check for existence.
 10 in set  # => False
 ```
 
-<br>
-
 ## Operators
-
 __Mathematical__ operators are straightforward.
 ```
 1 + 1   # => 2
@@ -284,10 +264,7 @@ b is a            # => False
 b == a            # => True
 ```
 
-<br>
-
 ## Control Flow
-
 __if__ statement.
 ```
 if var > 10:
@@ -324,8 +301,6 @@ animals = ["dog", "cat", "mouse"]
 for i, value in enumerate(animals):
     print(i, value)
 ```
-
-<br>
 
 __While__ loops.
 ```
@@ -369,10 +344,7 @@ with open("file.txt") as file:
         print(line)
 ```
 
-<br>
-
 ## Functions
-
 Create a new __function__.
 ```
 def add(x, y):
@@ -458,10 +430,7 @@ func = parent_func(10)
 func(3)   # => 13
 ```
 
-<br>
-
 ## Classes
-
 Define a __class__.
 ```
 class Person:
@@ -504,10 +473,7 @@ class Engineer(Person):
         print(f"I'm being paied around {self.pay} a year")
 ```
 
-<br>
-
 ## Modules
-
 __\_\_name\_\___ checks makes sure the code is only executed when the module is the main program.
 ```
 if __name__ == '__main__':
