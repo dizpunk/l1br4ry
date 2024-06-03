@@ -1,2 +1,5 @@
 # venv folder
 run/
+
+# mkdocs build
+site/
