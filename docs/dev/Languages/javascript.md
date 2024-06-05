@@ -158,3 +158,56 @@ const myFunction = function(a, b) {
 # Arrow Function
 const myFunction = (a, b) => a + b;
 ```
+
+
+## Async/Await
+```
+async function fetchData() {
+    try {
+        let response = await fetch('https://api.example.com/data');
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+```
+
+
+## Promises
+```
+let promise = new Promise((resolve, reject) => {
+    let success = true;
+    if (success) {
+        resolve("Success!");
+    } else {
+        reject("Error!");
+    }
+});
+
+promise.then((message) => {
+    console.log(message);
+}).catch((error) => {
+    console.log(error);
+});
+```
+
+
+## Modules
+
+#### Importing
+```
+import { myVariable, myFunction } from './myModule.js';
+import myDefaultFunction from './myModule.js';
+```
+
+#### Exporting
+```
+export const myVariable = 10;
+export function myFunction() {
+    // function code
+}
+export default function() {
+    // default function code
+}
+```
